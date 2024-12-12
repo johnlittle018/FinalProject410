@@ -20,27 +20,29 @@ pipeline {
                 sh './gradlew test'
             }
         }
-        post {
-        //                 always {
-        //                     junit "build/reports/tests/**/*.html"
-        //                 }
 
-            success {
-                echo 'Pipeline succeeded!'
-            }
+    }
 
-            failure {
-                echo 'Pipeline failed.'
-            }
+    post {
+//                 always {
+//                     junit "build/reports/tests/**/*.html"
+//                 }
 
-            unstable {
-                echo 'Pipeline is unstable. Some tests failed.'
-            }
+        success {
+            echo 'Pipeline succeeded!'
+        }
 
-            always {
-                echo 'Pipeline finished. Performing cleanup and test result processing.'
-                junit '**/build/test-results/**/*.xml' // Adjust this path if necessary
-            }
+        failure {
+            echo 'Pipeline failed.'
+        }
+
+        unstable {
+            echo 'Pipeline is unstable. Some tests failed.'
+        }
+
+        always {
+            echo 'Pipeline finished. Performing cleanup and test result processing.'
+            junit '**/build/test-results/**/*.xml' // Adjust this path if necessary
         }
     }
 }
