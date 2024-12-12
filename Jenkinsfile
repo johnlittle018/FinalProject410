@@ -10,14 +10,14 @@ pipeline {
             steps {
                 //echo 'Building version ${parameters.VERSION}'
                 echo 'Building Project...'
-                sh './gradlew build'
+                sh './gradlew build -x test'
             }
         }
         stage('Test') {
             steps {
                 //echo 'Testing version ${parameters.VERSION}'
                 echo 'Testing Project...'
-                sh './gradlew test || exit 1'
+                sh './gradlew test'
             }
         }
 

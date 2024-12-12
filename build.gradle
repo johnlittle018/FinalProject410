@@ -2,37 +2,18 @@ plugins {
     id 'java'
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+group = 'org.example'
+version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation 'junit:junit:4.13.1'
-//    testImplementation 'junit:junit:4.13.2' // Use JUnit 4 if that's the test framework
-
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
 }
 
 test {
     useJUnitPlatform()
-//    reports {
-//        junitXml.enabled = true
-//        html.enabled = true
-//    }
 }
-
-tasks.withType(Test) {
-    ignoreFailures = false
-}
-
-//tasks.test {
-//    useJUnit() // or useJUnitPlatform() for JUnit 5
-//    reports {
-//        junitXml.enabled = true
-//        html.enabled = true
-//    }
-//}
