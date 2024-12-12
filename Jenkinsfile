@@ -19,9 +19,7 @@ pipeline {
                 echo 'Testing Project...'
                 sh './gradlew test'
             }
-            post {
 
-            }
             post {
 //                 always {
 //                     junit "build/reports/tests/**/*.html"
@@ -43,6 +41,7 @@ pipeline {
                 unstable {
                     echo 'Pipeline is unstable. Some tests failed.'
                 }
+            }
         }
     }
 }
