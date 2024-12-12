@@ -3,12 +3,7 @@ package TruckAndCar;
 import java.util.List;
 
 public class Car extends Vehicle {
-    private int seatCapacity;
-    private double totalLoad;
 
-    public int getSeatCapacity() {
-        return seatCapacity;
-    }
 
     @Override
     void setSeatCapacity(int seatCapacity) {
@@ -25,28 +20,11 @@ public class Car extends Vehicle {
         this.setMaxLoadCapacity(maxLoadCapacity);
     }
 
-    @Override
-    public void loadPassenger(List<Passenger> passengers) {
-        double w = 0;
-        for(Passenger p : passengers) {
-            try {
-                w += p.getWeight();
-            } catch (Exception e) {
-                System.out.println("One or more passenger object is null.!!");
-            }
-        }
-        this.totalLoad = this.totalLoad + w;
-    }
 
-    @Override
-    public double getTotalLoad() {
-        return this.totalLoad;
-    }
 
-    @Override
-    void setTotalLoad(double totalLoad) {
-        this.totalLoad = totalLoad;
-    }
+
+
+
 
     @Override
     public boolean run() {

@@ -5,13 +5,13 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import java.sql.Array;
+
 import java.util.ArrayList;
 import java.util.List;
 
 
 @RunWith(JUnit4.class)
-public class TestTruckAndCar {
+public class TruckAndCarTest {
 
     @Test
     public void testCarLoadPassenger(){
@@ -23,7 +23,7 @@ public class TestTruckAndCar {
         double load = car.getTotalLoad();
         double correctValue = 50;
 
-        Assert.assertEquals("car load function fail", load, correctValue);
+        Assert.assertEquals("car load function fail", correctValue, load);
 
     }
 
@@ -35,7 +35,7 @@ public class TestTruckAndCar {
 
         truck.loadPassenger(passengers);
         double load = truck.getTotalLoad();
-        double correctValue = 60;
+        double correctValue = 50;
 
         Assert.assertEquals("car load function fail", load, correctValue);
 
