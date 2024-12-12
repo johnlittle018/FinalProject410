@@ -9,7 +9,7 @@ public class TestMp4Player {
         @Test
         public void testSample() {
 
-                Assert.assertEquals(3, 3);
+                Assert.assertEquals("test test failed",3, 3);
 
 
         }
