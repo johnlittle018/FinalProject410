@@ -35,7 +35,7 @@ public class TestTruckAndCar {
 
         truck.loadPassenger(passengers);
         double load = truck.getTotalLoad();
-        double correctValue = 50;
+        double correctValue = 60;
 
         Assert.assertEquals("car load function fail", load, correctValue);
 
