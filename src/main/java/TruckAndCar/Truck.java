@@ -32,7 +32,7 @@ public class Truck extends Vehicle {
     }
 
     @Override
-    void loadPassenger(List<Passenger> passengers) {
+    public void loadPassenger(List<Passenger> passengers) {
         double w = 0;
         for(Passenger p : passengers) {
             try {
@@ -45,7 +45,7 @@ public class Truck extends Vehicle {
     }
 
     @Override
-    double getTotalLoad() {
+    public double getTotalLoad() {
         return this.totalLoad;
     }
     @Override
@@ -54,7 +54,7 @@ public class Truck extends Vehicle {
     }
 
     @Override
-    boolean run() {
+    public boolean run() {
         // Check if the total load is within the capacity
         return !(this.getTotalLoad() > this.getMaxLoadCapacity());
     }

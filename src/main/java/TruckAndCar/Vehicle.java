@@ -7,9 +7,9 @@ abstract public class Vehicle {
 
     abstract void setSeatCapacity(int seatCapacity);
     abstract void setTotalLoad(double totalLoad);
-    abstract void loadPassenger(List<Passenger> passengers);
-    abstract double getTotalLoad();
-    abstract boolean run();
+    abstract public void loadPassenger(List<Passenger> passengers);
+    abstract public double getTotalLoad();
+    abstract public boolean run();
 
     public double getMaxLoadCapacity() {
         return maxLoadCapacity;
