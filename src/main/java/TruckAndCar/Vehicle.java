@@ -6,10 +6,18 @@ abstract public class Vehicle {
     private double maxLoadCapacity;
     protected int seatCapacity;
     protected double totalLoad;
+    protected int maxSeatCapacity = 2;
 
-    abstract void setSeatCapacity(int seatCapacity);
-    abstract public boolean run();
+    public Vehicle(double maxLoadCapacity, int maxSeatCapacity){
 
+        this.setMaxLoadCapacity(maxLoadCapacity);
+        this.setTotalLoad(0);
+        this.maxSeatCapacity = maxSeatCapacity;
+        this.setSeatCapacity(maxSeatCapacity);
+
+
+
+    }
 
 
     public double getMaxLoadCapacity() {
@@ -39,6 +47,24 @@ abstract public class Vehicle {
             }
         }
         this.totalLoad = this.totalLoad + w;
+    }
+
+
+    public void setSeatCapacity(int seatCapacity) {
+
+        if(seatCapacity > this.maxSeatCapacity) {
+            // Throw exception
+            System.out.println("Seat capacity is maximum " + this.maxSeatCapacity);
+            this.seatCapacity = this.maxSeatCapacity;
+        } else {
+            this.seatCapacity = seatCapacity;
+        }
+    }
+
+
+    public boolean run() {
+        // Check if the total load is within the capacity
+        return !(this.getTotalLoad() > this.getMaxLoadCapacity());
     }
 
 
