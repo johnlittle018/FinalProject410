@@ -10,7 +10,7 @@ public class Truck extends Vehicle {
         super(maxLoadCapacity ,2);
     }
 
-    void loadWeight(Weight weight) {
+    public void loadWeight(Weight weight) {
         this.setTotalLoad(this.getTotalLoad() + weight.getWeight());
     }
 
