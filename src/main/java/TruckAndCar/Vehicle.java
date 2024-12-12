@@ -32,15 +32,12 @@ abstract public class Vehicle {
         this.totalLoad = totalLoad;
     }
 
-    public void loadPassenger(List<Passenger> passengers){
+    public void loadPassenger(Passengers passengers){
         double w = 0;
-        for(Passenger p : passengers) {
-            try {
-                w += p.getWeight();
-            } catch (Exception e) {
-                System.out.println("One or more passenger object is null.!!");
-            }
+        for(Passenger p : passengers.getPassengers()) {
+            w += p.getWeight();
         }
+
         this.totalLoad = this.totalLoad + w;
     }
 
@@ -59,5 +56,5 @@ abstract public class Vehicle {
         // Check if the total load is within the capacity
         return !(this.getTotalLoad() > this.getMaxLoadCapacity());
     }
-    
+
 }

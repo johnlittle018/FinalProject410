@@ -22,10 +22,11 @@ public class Driver {
         Passenger p1 = new Passenger(60);
         Passenger p2 = new Passenger(50);
         List<Passenger> passengerList = new ArrayList<>();
-        passengerList.add(p1);
-        passengerList.add(p2);
+        Passengers passengers = new Passengers();
+        passengers.addPassenger(p1);
+        passengers.addPassenger(p2);
 
-        t1.loadPassenger(passengerList);
+        t1.loadPassenger(passengers);
 
         if(t1.run()) {
             System.out.println("Truck running smooth!");
@@ -36,7 +37,7 @@ public class Driver {
         Car c1 = new Car(500);
         c1.setSeatCapacity(5);
         c1.setMaxLoadCapacity(1000);
-        c1.loadPassenger(passengerList);
+        c1.loadPassenger(passengers);
         if(c1.run()) {
             System.out.println("Car running smooth!");
         } else {
