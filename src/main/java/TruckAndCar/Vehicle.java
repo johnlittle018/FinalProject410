@@ -14,11 +14,7 @@ abstract public class Vehicle {
         this.setTotalLoad(0);
         this.maxSeatCapacity = maxSeatCapacity;
         this.setSeatCapacity(maxSeatCapacity);
-
-
-
     }
-
 
     public double getMaxLoadCapacity() {
         return maxLoadCapacity;
@@ -36,7 +32,6 @@ abstract public class Vehicle {
         this.totalLoad = totalLoad;
     }
 
-
     public void loadPassenger(List<Passenger> passengers){
         double w = 0;
         for(Passenger p : passengers) {
@@ -49,7 +44,6 @@ abstract public class Vehicle {
         this.totalLoad = this.totalLoad + w;
     }
 
-
     public void setSeatCapacity(int seatCapacity) {
 
         if(seatCapacity > this.maxSeatCapacity) {
@@ -61,11 +55,9 @@ abstract public class Vehicle {
         }
     }
 
-
     public boolean run() {
         // Check if the total load is within the capacity
         return !(this.getTotalLoad() > this.getMaxLoadCapacity());
     }
-
-
+    
 }
