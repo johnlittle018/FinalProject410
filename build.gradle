@@ -17,12 +17,16 @@ dependencies {
 
 test {
     useJUnitPlatform()
-}
-
-tasks.test {
-    useJUnit() // or useJUnitPlatform() for JUnit 5
     reports {
         junitXml.enabled = true
         html.enabled = true
     }
 }
+
+//tasks.test {
+//    useJUnit() // or useJUnitPlatform() for JUnit 5
+//    reports {
+//        junitXml.enabled = true
+//        html.enabled = true
+//    }
+//}
