@@ -40,9 +40,9 @@ pipeline {
             echo 'Pipeline is unstable. Some tests failed.'
         }
 
-        always {
-            echo 'Pipeline finished. Performing cleanup and test result processing.'
-            junit '**/build/test-results/**/*.xml' // Adjust this path if necessary
-        }
+//         always {
+//             echo 'Pipeline finished. Performing cleanup and test result processing.'
+//             junit '**/build/test-results/**/*.xml' // Adjust this path if necessary
+//         }
     }
 }
