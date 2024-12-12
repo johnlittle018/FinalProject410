@@ -24,7 +24,7 @@ abstract public class Vehicle {
     public double getTotalLoad() {
         return this.totalLoad;
     }
-    private void setTotalLoad(double totalLoad) {
+    protected void setTotalLoad(double totalLoad) {
         this.totalLoad = totalLoad;
     }
 
