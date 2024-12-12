@@ -25,6 +25,10 @@ test {
 //    }
 }
 
+tasks.withType(Test) {
+    ignoreFailures = false
+}
+
 //tasks.test {
 //    useJUnit() // or useJUnitPlatform() for JUnit 5
 //    reports {
