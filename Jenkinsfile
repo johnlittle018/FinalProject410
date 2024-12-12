@@ -17,7 +17,7 @@ pipeline {
             steps {
                 //echo 'Testing version ${parameters.VERSION}'
                 echo 'Testing Project...'
-                sh './gradlew test'
+                sh './gradlew test || exit 1'
             }
         }
 
