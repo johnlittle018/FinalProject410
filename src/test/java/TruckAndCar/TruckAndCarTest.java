@@ -54,7 +54,7 @@ class VehicleTest {
         truck.setMaxLoadCapacity(3000);
         car.setMaxLoadCapacity(1400);
         Assertions.assertEquals(3000, truck.getMaxLoadCapacity());
-        Assertions.assertEquals(1500, car.getMaxLoadCapacity());
+        Assertions.assertEquals(1400, car.getMaxLoadCapacity());
 
 
 
