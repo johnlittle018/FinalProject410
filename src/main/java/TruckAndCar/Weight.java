@@ -10,4 +10,13 @@ public class Weight {
     public void setWeight(double weight) {
         this.weight = weight;
     }
+
+    public Weight(){
+        this.weight = 0;
+    }
+
+    public Weight(double weight){
+        this.weight = weight;
+    }
+
 }
