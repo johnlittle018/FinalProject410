@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TruckAndCar.VehicleTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-12-13T02:28:46" hostname="administrator-Standard-PC-i440FX-PIIX-1996" time="0.129">
+<testsuite name="TruckAndCar.VehicleTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-12-13T02:41:44" hostname="administrator-Standard-PC-i440FX-PIIX-1996" time="0.035">
   <properties/>
-  <testcase name="testRun()" classname="TruckAndCar.VehicleTest" time="0.058"/>
-  <testcase name="testCarLoadPassenger()" classname="TruckAndCar.VehicleTest" time="0.007"/>
-  <testcase name="testTruckLoadPassenger()" classname="TruckAndCar.VehicleTest" time="0.004"/>
-  <testcase name="testVehicleGettersAndSetters()" classname="TruckAndCar.VehicleTest" time="0.003"/>
-  <testcase name="getWeight()" classname="TruckAndCar.VehicleTest" time="0.004"/>
-  <testcase name="testSetSeatCapacity()" classname="TruckAndCar.VehicleTest" time="0.025"/>
+  <testcase name="testRun()" classname="TruckAndCar.VehicleTest" time="0.004"/>
+  <testcase name="testCarLoadPassenger()" classname="TruckAndCar.VehicleTest" time="0.003"/>
+  <testcase name="testTruckLoadPassenger()" classname="TruckAndCar.VehicleTest" time="0.002"/>
+  <testcase name="testVehicleGettersAndSetters()" classname="TruckAndCar.VehicleTest" time="0.002"/>
+  <testcase name="getWeight()" classname="TruckAndCar.VehicleTest" time="0.002"/>
+  <testcase name="testSetSeatCapacity()" classname="TruckAndCar.VehicleTest" time="0.01"/>
   <system-out><![CDATA[Seat capacity is maximum 2
 Seat capacity is maximum 5
 ]]></system-out>

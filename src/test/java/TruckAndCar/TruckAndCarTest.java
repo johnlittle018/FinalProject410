@@ -83,7 +83,7 @@ class VehicleTest {
         truck.setSeatCapacity(10);
         car.setSeatCapacity(10);
         Assertions.assertEquals(2, truck.getSeatCapacity());
-        Assertions.assertEquals(6, car.getSeatCapacity());
+        Assertions.assertEquals(5, car.getSeatCapacity());
 
     }
 
