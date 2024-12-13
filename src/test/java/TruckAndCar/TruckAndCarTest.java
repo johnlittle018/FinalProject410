@@ -56,13 +56,6 @@ class VehicleTest {
         Assertions.assertEquals(3000, truck.getMaxLoadCapacity());
         Assertions.assertEquals(1400, car.getMaxLoadCapacity());
 
-
-
-
-//        Assertions.assertEquals();
-//        Assertions.assertEquals();
-//        Assertions.assertEquals();
-//        Assertions.assertEquals();
     }
 
     @Test
